@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01436EA24F3CC5000AEC531D /* IntrinsicsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60EF28F3F61443BAB4CD570 /* IntrinsicsStore.swift */; };
+		0A8FE7F19707F45ABE91A003 /* EventDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E48E4709477A927F50879D /* EventDetector.swift */; };
+		15F1B6DA3DCA40A07FAD02D4 /* CheckerboardGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC848997705DC4526A64622D /* CheckerboardGenerator.swift */; };
+		26FB238782D0FC48F708C584 /* ProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F497176BCCE8C9041E00ED74 /* ProcessingTests.swift */; };
+		2BB01567247B6DE143A644B9 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB830510CF382704684EAD2A /* Units.swift */; };
+		30DCAAE90F66C764C5161F9D /* MetricCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD048C1109143DECFD22FB7 /* MetricCatalog.swift */; };
+		36DCE5BCB3E052B6FBA91E17 /* IntrinsicCalibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F39C29B7C5034A3147E320 /* IntrinsicCalibrationView.swift */; };
+		46D4015F3A8864ED8EA0060B /* CheckerboardSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9809764BAFF937E216CADC6 /* CheckerboardSetupView.swift */; };
+		474C9B6D4F6FA48873B82496 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2210A39C36387797DD129D96 /* SessionStore.swift */; };
+		55C872EFC9A0883F47F193DF /* SignalProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE409BBA56505ED5306FFCA /* SignalProcessing.swift */; };
+		6371AC8F817D29FBA53CBC0D /* AnalysisRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE0DAD263B3C3E78BA7B58 /* AnalysisRunner.swift */; };
+		66B71C033E9A5228782BFFB9 /* MetricsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183950E8E9F4FF657F4024FC /* MetricsEngine.swift */; };
+		67F1937E583E0AF7A56F15D4 /* CalibrationUISupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA912F1871E35158A2665C8E /* CalibrationUISupport.swift */; };
+		6B520E8AE3190E01AB466FB1 /* LinearAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB681428300BB0F35D7EBB /* LinearAlgebra.swift */; };
+		796F2819C2D261F6BF286CE6 /* CheckerboardDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AD25B5D068D4DBA2271FA7 /* CheckerboardDetector.swift */; };
+		838A9CBA975381F6B98EE3AD /* IntrinsicCalibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845DCA70E565492FD4DA6DF /* IntrinsicCalibrator.swift */; };
+		859974602849CC55575091ED /* Reconstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3820A5C4403CD777D710EA83 /* Reconstruction.swift */; };
+		8733E06E3C85D7532790121A /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7265360DD79B91625646849 /* CaptureView.swift */; };
+		88BFA964E7CAD4FD182012BE /* TripleJumpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75689DDFC52224F0F438C9 /* TripleJumpApp.swift */; };
+		938A4E79DBE7937126E1556C /* CameraGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095984FC3CA9237563956DA1 /* CameraGeometry.swift */; };
+		983275561EC0483D02F8F3C7 /* TripodCalibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FB0B0F10E59A8C045343AA /* TripodCalibrationView.swift */; };
+		9DF855A09B5F7C75ED29AA9D /* ConsistencyGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72E6457833089D8FB69A51 /* ConsistencyGuard.swift */; };
+		B81E0DCA209249E3F5DBD093 /* PoseEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FF358E1A3C84011680742 /* PoseEstimator.swift */; };
+		B92F16BBCA92E27002701BFD /* MediaPipeTasksCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27152CF9EEDB7C4954861EA3 /* MediaPipeTasksCommon.xcframework */; };
+		BD7BCFA493217B7894554517 /* IntrinsicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619004AC3AFE1398558773CF /* IntrinsicsTests.swift */; };
+		C54E800F2C033F2CFA698EB1 /* CalibrationProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606ABCB54451D3316B0B983 /* CalibrationProfile.swift */; };
+		CFA26C9554DA33D4058601B1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB950FE51D8E5FFD5B58B92 /* RootView.swift */; };
+		D17D522DAB14C00F87F46002 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E56C711931BF98F1A7254C3 /* SettingsView.swift */; };
+		D32A8E9CD6EFEB0E84E90EE0 /* HardwareCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA9D2BBF7D74176700753B /* HardwareCheckView.swift */; };
+		D8DE1A8BB38F8C1E0B515443 /* PoseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70192F91D1CCF83329BD6D60 /* PoseModel.swift */; };
+		E0E79FD5D448E297B62A3941 /* SessionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE6FACFAA9A9175DDACAE25 /* SessionHistoryView.swift */; };
+		E694CA06BC3212BD58D16C80 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19AB905104DA48879048FEA /* AppState.swift */; };
+		E93592B5040A9C21A6DF6FD6 /* MediaPipeTasksVision.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745D842334F568FAF1B28B24 /* MediaPipeTasksVision.xcframework */; };
+		F280FDCB9D30EEA0A5330F80 /* CaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131861E04552744540DA8D8 /* CaptureController.swift */; };
+		F490BAEEEAC9F1C622B0F796 /* pose_landmarker_heavy.task in Resources */ = {isa = PBXBuildFile; fileRef = 7E02BE8412C4496E6BE58918 /* pose_landmarker_heavy.task */; };
+		F5A007F2413639B45376E204 /* CameraHardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7508FA5135779ED4EBC555D1 /* CameraHardware.swift */; };
+		F61F2B2578C3D8CE81D31396 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0E2EA6B00EF7CFBFFBE016 /* ResultsView.swift */; };
+		FBDFB9613B0B56C1398CE382 /* EventCorrectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C23FB82B013C737E6F8842A /* EventCorrectionView.swift */; };
+		FC81B041047650EBB27A30A2 /* CalibrationSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F8AC0B36C2C1B12ED50F04 /* CalibrationSolver.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16C9C56A97F7C5942B69A60E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F01C2E624E08A72BC055B46F;
+			remoteInfo = TripleJump;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		095984FC3CA9237563956DA1 /* CameraGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraGeometry.swift; sourceTree = "<group>"; };
+		0AB950FE51D8E5FFD5B58B92 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		0B75689DDFC52224F0F438C9 /* TripleJumpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleJumpApp.swift; sourceTree = "<group>"; };
+		10AD25B5D068D4DBA2271FA7 /* CheckerboardDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerboardDetector.swift; sourceTree = "<group>"; };
+		183950E8E9F4FF657F4024FC /* MetricsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsEngine.swift; sourceTree = "<group>"; };
+		1ADE0DAD263B3C3E78BA7B58 /* AnalysisRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisRunner.swift; sourceTree = "<group>"; };
+		2210A39C36387797DD129D96 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		27152CF9EEDB7C4954861EA3 /* MediaPipeTasksCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MediaPipeTasksCommon.xcframework; sourceTree = "<group>"; };
+		2BAB681428300BB0F35D7EBB /* LinearAlgebra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearAlgebra.swift; sourceTree = "<group>"; };
+		2E56C711931BF98F1A7254C3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		31FB0B0F10E59A8C045343AA /* TripodCalibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripodCalibrationView.swift; sourceTree = "<group>"; };
+		3820A5C4403CD777D710EA83 /* Reconstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reconstruction.swift; sourceTree = "<group>"; };
+		5845DCA70E565492FD4DA6DF /* IntrinsicCalibrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicCalibrator.swift; sourceTree = "<group>"; };
+		5C23FB82B013C737E6F8842A /* EventCorrectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCorrectionView.swift; sourceTree = "<group>"; };
+		5EAA9D2BBF7D74176700753B /* HardwareCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareCheckView.swift; sourceTree = "<group>"; };
+		5EE6FACFAA9A9175DDACAE25 /* SessionHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHistoryView.swift; sourceTree = "<group>"; };
+		60F8AC0B36C2C1B12ED50F04 /* CalibrationSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationSolver.swift; sourceTree = "<group>"; };
+		619004AC3AFE1398558773CF /* IntrinsicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicsTests.swift; sourceTree = "<group>"; };
+		620FF358E1A3C84011680742 /* PoseEstimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseEstimator.swift; sourceTree = "<group>"; };
+		65E48E4709477A927F50879D /* EventDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetector.swift; sourceTree = "<group>"; };
+		6B0E2EA6B00EF7CFBFFBE016 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		70192F91D1CCF83329BD6D60 /* PoseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseModel.swift; sourceTree = "<group>"; };
+		745D842334F568FAF1B28B24 /* MediaPipeTasksVision.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MediaPipeTasksVision.xcframework; sourceTree = "<group>"; };
+		7508FA5135779ED4EBC555D1 /* CameraHardware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHardware.swift; sourceTree = "<group>"; };
+		7A72E6457833089D8FB69A51 /* ConsistencyGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsistencyGuard.swift; sourceTree = "<group>"; };
+		7E02BE8412C4496E6BE58918 /* pose_landmarker_heavy.task */ = {isa = PBXFileReference; lastKnownFileType = file; path = pose_landmarker_heavy.task; sourceTree = "<group>"; };
+		9606ABCB54451D3316B0B983 /* CalibrationProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationProfile.swift; sourceTree = "<group>"; };
+		996AD237BC284D463E664FFE /* TripleJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripleJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A131861E04552744540DA8D8 /* CaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureController.swift; sourceTree = "<group>"; };
+		AA912F1871E35158A2665C8E /* CalibrationUISupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationUISupport.swift; sourceTree = "<group>"; };
+		AB830510CF382704684EAD2A /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		B19AB905104DA48879048FEA /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B7265360DD79B91625646849 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		BAE409BBA56505ED5306FFCA /* SignalProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalProcessing.swift; sourceTree = "<group>"; };
+		BC848997705DC4526A64622D /* CheckerboardGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerboardGenerator.swift; sourceTree = "<group>"; };
+		BD5FEB36355BB38F98691943 /* TripleJumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripleJumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C87753B1D5AFD312EBDC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F39C29B7C5034A3147E320 /* IntrinsicCalibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicCalibrationView.swift; sourceTree = "<group>"; };
+		F497176BCCE8C9041E00ED74 /* ProcessingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingTests.swift; sourceTree = "<group>"; };
+		F60EF28F3F61443BAB4CD570 /* IntrinsicsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicsStore.swift; sourceTree = "<group>"; };
+		F9809764BAFF937E216CADC6 /* CheckerboardSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerboardSetupView.swift; sourceTree = "<group>"; };
+		FBD048C1109143DECFD22FB7 /* MetricCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCatalog.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F87A878AEB94E823836E22B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E93592B5040A9C21A6DF6FD6 /* MediaPipeTasksVision.xcframework in Frameworks */,
+				B92F16BBCA92E27002701BFD /* MediaPipeTasksCommon.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A4D45905684BD40D53A6E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		113236722DEE1DC96F378B9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				996AD237BC284D463E664FFE /* TripleJump.app */,
+				BD5FEB36355BB38F98691943 /* TripleJumpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42006AB264CF2AB66A8087C0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0B75689DDFC52224F0F438C9 /* TripleJumpApp.swift */,
+				D2C87753B1D5AFD312EBDC91 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		59231F908C7CE92BDE76CB57 /* TJApp */ = {
+			isa = PBXGroup;
+			children = (
+				1ADE0DAD263B3C3E78BA7B58 /* AnalysisRunner.swift */,
+				B19AB905104DA48879048FEA /* AppState.swift */,
+				9606ABCB54451D3316B0B983 /* CalibrationProfile.swift */,
+				60F8AC0B36C2C1B12ED50F04 /* CalibrationSolver.swift */,
+				AA912F1871E35158A2665C8E /* CalibrationUISupport.swift */,
+				095984FC3CA9237563956DA1 /* CameraGeometry.swift */,
+				7508FA5135779ED4EBC555D1 /* CameraHardware.swift */,
+				A131861E04552744540DA8D8 /* CaptureController.swift */,
+				B7265360DD79B91625646849 /* CaptureView.swift */,
+				10AD25B5D068D4DBA2271FA7 /* CheckerboardDetector.swift */,
+				BC848997705DC4526A64622D /* CheckerboardGenerator.swift */,
+				F9809764BAFF937E216CADC6 /* CheckerboardSetupView.swift */,
+				7A72E6457833089D8FB69A51 /* ConsistencyGuard.swift */,
+				5C23FB82B013C737E6F8842A /* EventCorrectionView.swift */,
+				65E48E4709477A927F50879D /* EventDetector.swift */,
+				5EAA9D2BBF7D74176700753B /* HardwareCheckView.swift */,
+				E2F39C29B7C5034A3147E320 /* IntrinsicCalibrationView.swift */,
+				5845DCA70E565492FD4DA6DF /* IntrinsicCalibrator.swift */,
+				F60EF28F3F61443BAB4CD570 /* IntrinsicsStore.swift */,
+				2BAB681428300BB0F35D7EBB /* LinearAlgebra.swift */,
+				FBD048C1109143DECFD22FB7 /* MetricCatalog.swift */,
+				183950E8E9F4FF657F4024FC /* MetricsEngine.swift */,
+				620FF358E1A3C84011680742 /* PoseEstimator.swift */,
+				70192F91D1CCF83329BD6D60 /* PoseModel.swift */,
+				3820A5C4403CD777D710EA83 /* Reconstruction.swift */,
+				6B0E2EA6B00EF7CFBFFBE016 /* ResultsView.swift */,
+				0AB950FE51D8E5FFD5B58B92 /* RootView.swift */,
+				5EE6FACFAA9A9175DDACAE25 /* SessionHistoryView.swift */,
+				2210A39C36387797DD129D96 /* SessionStore.swift */,
+				2E56C711931BF98F1A7254C3 /* SettingsView.swift */,
+				BAE409BBA56505ED5306FFCA /* SignalProcessing.swift */,
+				31FB0B0F10E59A8C045343AA /* TripodCalibrationView.swift */,
+				AB830510CF382704684EAD2A /* Units.swift */,
+			);
+			name = TJApp;
+			path = Sources/TJApp;
+			sourceTree = "<group>";
+		};
+		71DC27D9F8E3B109C877BFC4 = {
+			isa = PBXGroup;
+			children = (
+				42006AB264CF2AB66A8087C0 /* App */,
+				59231F908C7CE92BDE76CB57 /* TJApp */,
+				D6C849779C92E025F6502698 /* TJAppTests */,
+				82DAB9F55C0B6BAF4399D627 /* Frameworks */,
+				CA2DA976D1169AE0BBF0B8BE /* Resources */,
+				113236722DEE1DC96F378B9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82DAB9F55C0B6BAF4399D627 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				745D842334F568FAF1B28B24 /* MediaPipeTasksVision.xcframework */,
+				27152CF9EEDB7C4954861EA3 /* MediaPipeTasksCommon.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA2DA976D1169AE0BBF0B8BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E02BE8412C4496E6BE58918 /* pose_landmarker_heavy.task */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D6C849779C92E025F6502698 /* TJAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				619004AC3AFE1398558773CF /* IntrinsicsTests.swift */,
+				F497176BCCE8C9041E00ED74 /* ProcessingTests.swift */,
+			);
+			name = TJAppTests;
+			path = Tests/TJAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C706FA839F4C1F2316B35783 /* TripleJumpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E47EEC85B4E560F9CFE8E0B /* Build configuration list for PBXNativeTarget "TripleJumpTests" */;
+			buildPhases = (
+				0D9FED2C54C8F345B7A1EB3B /* Sources */,
+				79A4D45905684BD40D53A6E7 /* Frameworks */,
+				05CC13D278B010ECCEBEECED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB8E904D3EC2A0A9BD0AC4F5 /* PBXTargetDependency */,
+			);
+			name = TripleJumpTests;
+			productName = TripleJumpTests;
+			productReference = BD5FEB36355BB38F98691943 /* TripleJumpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F01C2E624E08A72BC055B46F /* TripleJump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2EF0BFE4C820F767E4303FC /* Build configuration list for PBXNativeTarget "TripleJump" */;
+			buildPhases = (
+				6B366E3A6159DC0A46CE6169 /* Sources */,
+				0F87A878AEB94E823836E22B /* Frameworks */,
+				34E903FB6EA77173817200D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TripleJump;
+			productName = TripleJump;
+			productReference = 996AD237BC284D463E664FFE /* TripleJump.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					C706FA839F4C1F2316B35783 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = F01C2E624E08A72BC055B46F;
+					};
+					F01C2E624E08A72BC055B46F = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = 32D42B6A09FA42C6EFFC8E0F /* Build configuration list for PBXProject "TripleJump" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71DC27D9F8E3B109C877BFC4;
+			productRefGroup = 113236722DEE1DC96F378B9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F01C2E624E08A72BC055B46F /* TripleJump */,
+				C706FA839F4C1F2316B35783 /* TripleJumpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05CC13D278B010ECCEBEECED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34E903FB6EA77173817200D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F490BAEEEAC9F1C622B0F796 /* pose_landmarker_heavy.task in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D9FED2C54C8F345B7A1EB3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7BCFA493217B7894554517 /* IntrinsicsTests.swift in Sources */,
+				26FB238782D0FC48F708C584 /* ProcessingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B366E3A6159DC0A46CE6169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6371AC8F817D29FBA53CBC0D /* AnalysisRunner.swift in Sources */,
+				E694CA06BC3212BD58D16C80 /* AppState.swift in Sources */,
+				C54E800F2C033F2CFA698EB1 /* CalibrationProfile.swift in Sources */,
+				FC81B041047650EBB27A30A2 /* CalibrationSolver.swift in Sources */,
+				67F1937E583E0AF7A56F15D4 /* CalibrationUISupport.swift in Sources */,
+				938A4E79DBE7937126E1556C /* CameraGeometry.swift in Sources */,
+				F5A007F2413639B45376E204 /* CameraHardware.swift in Sources */,
+				F280FDCB9D30EEA0A5330F80 /* CaptureController.swift in Sources */,
+				8733E06E3C85D7532790121A /* CaptureView.swift in Sources */,
+				796F2819C2D261F6BF286CE6 /* CheckerboardDetector.swift in Sources */,
+				15F1B6DA3DCA40A07FAD02D4 /* CheckerboardGenerator.swift in Sources */,
+				46D4015F3A8864ED8EA0060B /* CheckerboardSetupView.swift in Sources */,
+				9DF855A09B5F7C75ED29AA9D /* ConsistencyGuard.swift in Sources */,
+				FBDFB9613B0B56C1398CE382 /* EventCorrectionView.swift in Sources */,
+				0A8FE7F19707F45ABE91A003 /* EventDetector.swift in Sources */,
+				D32A8E9CD6EFEB0E84E90EE0 /* HardwareCheckView.swift in Sources */,
+				36DCE5BCB3E052B6FBA91E17 /* IntrinsicCalibrationView.swift in Sources */,
+				838A9CBA975381F6B98EE3AD /* IntrinsicCalibrator.swift in Sources */,
+				01436EA24F3CC5000AEC531D /* IntrinsicsStore.swift in Sources */,
+				6B520E8AE3190E01AB466FB1 /* LinearAlgebra.swift in Sources */,
+				30DCAAE90F66C764C5161F9D /* MetricCatalog.swift in Sources */,
+				66B71C033E9A5228782BFFB9 /* MetricsEngine.swift in Sources */,
+				B81E0DCA209249E3F5DBD093 /* PoseEstimator.swift in Sources */,
+				D8DE1A8BB38F8C1E0B515443 /* PoseModel.swift in Sources */,
+				859974602849CC55575091ED /* Reconstruction.swift in Sources */,
+				F61F2B2578C3D8CE81D31396 /* ResultsView.swift in Sources */,
+				CFA26C9554DA33D4058601B1 /* RootView.swift in Sources */,
+				E0E79FD5D448E297B62A3941 /* SessionHistoryView.swift in Sources */,
+				474C9B6D4F6FA48873B82496 /* SessionStore.swift in Sources */,
+				D17D522DAB14C00F87F46002 /* SettingsView.swift in Sources */,
+				55C872EFC9A0883F47F193DF /* SignalProcessing.swift in Sources */,
+				983275561EC0483D02F8F3C7 /* TripodCalibrationView.swift in Sources */,
+				2BB01567247B6DE143A644B9 /* Units.swift in Sources */,
+				88BFA964E7CAD4FD182012BE /* TripleJumpApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB8E904D3EC2A0A9BD0AC4F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F01C2E624E08A72BC055B46F /* TripleJump */;
+			targetProxy = 16C9C56A97F7C5942B69A60E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0868FB48DE6BB567198BEAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.triplejump.TripleJumpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripleJump.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TripleJump";
+			};
+			name = Release;
+		};
+		39449EDF7B151AF1BDA56BF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		453FF012BC101FA2B9706FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		A86756326B10413DEF26E20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99G6DUFNLY;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lc++",
+					"-framework",
+					Accelerate,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreImage,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					QuartzCore,
+				);
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
+					"$(inherited)",
+					"-force_load",
+					"$(SRCROOT)/Frameworks/graph_libraries/libMediaPipeTasksCommon_device_graph.a",
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"-force_load",
+					"$(SRCROOT)/Frameworks/graph_libraries/libMediaPipeTasksCommon_simulator_graph.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.triplejump.TripleJump;
+				PRODUCT_MODULE_NAME = TJApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C8D8812CF522ADDC23333C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.triplejump.TripleJumpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripleJump.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TripleJump";
+			};
+			name = Debug;
+		};
+		F28A85BE60487DC1BDCF015E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99G6DUFNLY;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lc++",
+					"-framework",
+					Accelerate,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreImage,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					QuartzCore,
+				);
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
+					"$(inherited)",
+					"-force_load",
+					"$(SRCROOT)/Frameworks/graph_libraries/libMediaPipeTasksCommon_device_graph.a",
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"-force_load",
+					"$(SRCROOT)/Frameworks/graph_libraries/libMediaPipeTasksCommon_simulator_graph.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.triplejump.TripleJump;
+				PRODUCT_MODULE_NAME = TJApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E47EEC85B4E560F9CFE8E0B /* Build configuration list for PBXNativeTarget "TripleJumpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D8812CF522ADDC23333C1B /* Debug */,
+				0868FB48DE6BB567198BEAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D42B6A09FA42C6EFFC8E0F /* Build configuration list for PBXProject "TripleJump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39449EDF7B151AF1BDA56BF2 /* Debug */,
+				453FF012BC101FA2B9706FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2EF0BFE4C820F767E4303FC /* Build configuration list for PBXNativeTarget "TripleJump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28A85BE60487DC1BDCF015E /* Debug */,
+				A86756326B10413DEF26E20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

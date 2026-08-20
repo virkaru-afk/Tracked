@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Triple Jump</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+
+	<key>NSCameraUsageDescription</key>
+	<string>Records jumps for technique analysis.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Saves recorded jumps to your photo library.</string>
+
+	<!-- Landscape only, and specifically LandscapeRight — one fixed physical
+	     orientation, not two.
+
+	     This was portrait in an earlier version, which was wrong. The
+	     geometry itself does not care: CameraModel and WorldFrame work in
+	     whatever pixel coordinates the buffer has, whichever way the phone
+	     is held. The real cost of portrait is a wasted sensor: a runway is
+	     wide, an athlete crosses ten metres of it, and a phone held upright
+	     points the sensor's long axis at the sky and the ground instead of
+	     along the runway, giving fewer effective pixels across the athlete
+	     than a landscape mount would. Locking the UI to landscape is what
+	     makes a coach naturally mount the phone the efficient way instead of
+	     the "normal for a phone" way.
+
+	     Locked to one landscape orientation rather than both: allowing both
+	     LandscapeLeft and LandscapeRight would need the capture connection's
+	     rotation tracked live against interface orientation to keep pixel
+	     axes consistently interpreted, which is real complexity this app
+	     does not need yet. One fixed orientation removes the ambiguity
+	     instead of handling it.
+
+	     WHICH landscape orientation is not arbitrary, and this key is half of
+	     a pair. `CameraPreview` pins the preview connection to
+	     videoRotationAngle = 0 so that preview pixels ARE buffer pixels —
+	     every tapped board corner is converted straight to image coordinates
+	     by AspectFitMapping, and that conversion is only valid when the two
+	     share axes. The preview therefore cannot be rotated to suit the
+	     interface; the interface has to be chosen to suit the preview.
+
+	     So: if the picture is upside down on the tripod, change this key to
+	     UIInterfaceOrientationLandscapeLeft. Do not "fix" it by rotating the
+	     preview, which would look right and put every calibration tap 180°
+	     out with nothing to show for it. -->
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<key>UILaunchScreen</key>
+	<dict/>
+
+	<!-- Recording at up to 240 fps for the length of an approach run is long
+	     enough that an auto-lock mid-jump is a real risk. -->
+	<key>UIRequiresPersistentWiFi</key>
+	<false/>
+
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+
+	<!-- A device without a rear camera cannot do anything this app does.
+
+	     `arm64` rather than the `armv7` that was here: the deployment target
+	     is iOS 17, so every device that can install this is 64-bit only.
+	     `armv7` is a leftover from an old project template and is the kind of
+	     entry that causes an install-time rejection for no real reason. -->
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+		<string>video-camera</string>
+	</array>
+</dict>
+</plist>
